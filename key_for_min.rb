@@ -6,12 +6,7 @@ def key_for_min_value(name_hash)
   keys = name_hash.collect { |k, v| k }
   min = values[0]
   puts values
-  values.each  do |value|
-    puts "\tval:#{value}"
-    puts "\tmin:#{min}"
-    min = value < min ? value : min
-    puts "\tmin:#{min}"
-  end
+  values.each { |value| min = value < min ? value : min }
   puts "min:#{min}"
   puts "values:#{values}"
   puts "keys:#{keys}"
