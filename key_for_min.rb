@@ -7,10 +7,10 @@ def key_for_min_value(name_hash)
   min = values[0]
   puts values
   values.each  do |value|
-    puts "\t#{value}"
-    puts "\t#{min}"
-    min = value < min ? value : min 
-    puts "\t#{min}"
+    puts "\tval:#{value}"
+    puts "\tmin:#{min}"
+    min = value < min ? value : min
+    puts "\tmin:#{min}"
   end
   puts min
   keys.index(min)
