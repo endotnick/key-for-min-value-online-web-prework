@@ -13,7 +13,7 @@ def key_for_min_value(name_hash)
     puts "\tmin:#{min}"
   end
   puts "min:#{min}"
-  puts "keys:#{keys}"
-  puts "index:#{keys.index(min)}"
-  keys.index(min)
+  puts "keys:#{values}"
+  puts "index:#{values.index(min)}"
+  values.index(min)
 end
