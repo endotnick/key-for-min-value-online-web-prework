@@ -10,5 +10,6 @@ def key_for_min_value(name_hash)
   puts "values:#{values}"
   puts "keys:#{keys}"
   puts "index:#{values.index(min)}"
-  keys[values.index(min)]
+  return min ? keys[values.index(min)] : nil
+
 end
