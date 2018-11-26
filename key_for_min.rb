@@ -12,6 +12,8 @@ def key_for_min_value(name_hash)
     min = value < min ? value : min
     puts "\tmin:#{min}"
   end
-  puts min
+  puts "min:#{min}"
+  puts "keys:#{keys}"
+  puts "index:#{keys.index(min)}"
   keys.index(min)
 end
