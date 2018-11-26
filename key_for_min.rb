@@ -5,11 +5,12 @@ def key_for_min_value(name_hash)
   values = name_hash.collect { |k, v| v }
   keys = name_hash.collect { |k, v| k }
   min = values[0]
+  puts values
   values.each  do |value|
-    puts value
-    puts min
-    min = value < min ? value : min
-    puts min
+    puts "\t#{value}"
+    puts "\t#{min}"
+    min = value < min ? value : min 
+    puts "\t#{min}"
   end
   puts min
   keys.index(min)
